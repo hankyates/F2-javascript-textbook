@@ -24,6 +24,10 @@
 
 
 ## Need help?
+That's what we are here for!
+
+### How to ask better questions
+Check out this short deck on [how to ask technical questions](https://speakerdeck.com/ivanoats/a-good-question)
 
 ### Connect to IRC.
 There is a #codefellows channel on irc.freenode.net a ton of bootcamp students, Instructors, and generally knowledgable people are in that chat room. Ask for help and I'm sure someone will oblige! 
