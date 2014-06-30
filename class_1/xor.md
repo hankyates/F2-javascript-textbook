@@ -1,3 +1,4 @@
+```
 // Implement an exclusive OR function called `preferredName` that has the following interface:
 
 var FirstName,
@@ -20,4 +21,4 @@ FirstName = '';
 
 preferredName(FirstName, LastName);
 // -> 'Yates'
-
+```

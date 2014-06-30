@@ -1,6 +1,7 @@
+```
 // Given the following data structure
-// implement a oldestLivingParent method 
-// that will return the name of the oldest 
+// implement a oldestLivingParent method
+// that will return the name of the oldest
 // living parent.
 
 var people = [
@@ -41,4 +42,4 @@ var people = [
 oldestLivingParent(people);
 // -> 'Don'
 
-
+```

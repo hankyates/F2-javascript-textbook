@@ -1,27 +1,13 @@
 # Codefellows Javascript Foundations Night Course
 
-## Useful Reading
+## Supplemental Reading Reading
 
 - [Hoisting](http://code.tutsplus.com/tutorials/javascript-hoisting-explained--net-15092)
 - [MDN on closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures)
   - This article really helped me fully understand closures.
-- [Async](http://www.slideshare.net/clutchski/writing-asynchronous-javascript-101)
-- [AJAX](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)
 - [Front-end Job Interview Questions](https://github.com/darcyclarke/Front-end-Developer-Interview-Questions)
   - Sometimes I'll read through this list and the first thing I don't know I go and learn about it.
-- [CSS Selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors)
 - [Career Cup](http://www.careercup.com/page?pid=amazon-interview-questions&sort=comments)
-- [MVC Design Pattern](http://blog.codinghorror.com/understanding-model-view-controller/)
-- [MOVE Design Pattern](http://cirw.in/blog/time-to-move-on)
-
-## Tutorials
-- [Angular Videos](https://egghead.io/)
-- [Backbone Tutorial](http://adrianmejia.com/blog/2012/09/11/backbone-dot-js-for-absolute-beginners-getting-started)
-
-## Ajax Assignment
-- [http://rs.hankyates.com:3000/content](http://rs.hankyates.com:3000/content)
-- [http://rs.hankyates.com:3000/v2/content](http://rs.hankyates.com:3000/v2/content)
-
 
 ## Need help?
 

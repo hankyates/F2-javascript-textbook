@@ -16,5 +16,8 @@ Then to merge in everyone else's changes run the following command:
 
 This command is saying 'go to the Code Fellows repository. get the master branch. pull the master branch down to my local repository. and merge it into my local master branch.'
 
-#Useful Reading
+#Required Reading
 - [A re-introduction to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
+
+#Slides
+- [Primitive Type Slides](http://hankyates.github.io/jsPrimitiveTypesSlides/)
