@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="hankyates/F2-javascript-textbook" data-level="2.2" data-basepath=".." data-revision="1404094990799">
+    <div class="book" data-github="hankyates/F2-javascript-textbook" data-level="2.2" data-basepath=".." data-revision="1404448215460">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -428,29 +428,30 @@
                 
                     <section class="normal" id="section-gitbook_6">
                     
-                        <pre><code>// Implement an exclusive OR function called `preferredName` that has the following interface:
+                        <pre><code class="lang-javascript"><span class="hljs-comment">// Implement an exclusive OR function called `preferredName` that has the following interface:</span>
 
-var FirstName,
+<span class="hljs-keyword">var</span> FirstName,
     LastName;
 
 preferredName(FirstName, LastName);
-// -&gt; false
+<span class="hljs-comment">// -&gt; false</span>
 
-FirstName = &#39;Hank&#39;;
-
-preferredName(FirstName, LastName);
-// -&gt; &#39;Hank&#39;
-
-LastName = &#39;Yates&#39;;
+FirstName = <span class="hljs-string">'Hank'</span>;
 
 preferredName(FirstName, LastName);
-// -&gt; false
+<span class="hljs-comment">// -&gt; 'Hank'</span>
 
-FirstName = &#39;&#39;;
+LastName = <span class="hljs-string">'Yates'</span>;
 
 preferredName(FirstName, LastName);
-// -&gt; &#39;Yates&#39;
+<span class="hljs-comment">// -&gt; false</span>
+
+FirstName = <span class="hljs-string">''</span>;
+
+preferredName(FirstName, LastName);
+<span class="hljs-comment">// -&gt; 'Yates'</span>
 </code></pre>
+
                     
                     </section>
                 
