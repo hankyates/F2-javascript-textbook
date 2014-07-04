@@ -12,3 +12,7 @@
 - Objects
   - Object literal definition
   - Object#create
+  - dot notation get and set
+    - myObject.index
+  - index get and set
+    - myObject[index]
