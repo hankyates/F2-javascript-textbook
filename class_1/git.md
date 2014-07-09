@@ -6,3 +6,5 @@
 - Add a README.md under your folder containing a little bit about yourself!
 - Open a Pull Request between your fork and the Codefellows repository.
 
+[Markdown Basics](https://daringfireball.net/projects/markdown/basics)  
+[Markdown Syntax Docs](http://daringfireball.net/projects/markdown/syntax)
