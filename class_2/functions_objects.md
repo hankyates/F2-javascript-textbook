@@ -17,3 +17,6 @@
     - myObject.index
   - index get and set
     - myObject[index]
+
+### Required Reading
+  - [Introduction to Object-Oriented Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
