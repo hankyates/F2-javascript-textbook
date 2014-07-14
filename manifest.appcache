@@ -1,8 +1,9 @@
 CACHE MANIFEST
-# Revision 1404956612299
+# Revision 1405312381367
 
 CACHE:
 class_3/flow_control.html
+class_3/function_decorator.html
 class_3/string_delimiter.html
 index.html
 class_1/git.html
@@ -10,9 +11,9 @@ class_1/primitive_types.html
 class_1/xor.html
 class_2/functions_objects.html
 class_2/person.html
+class_4/lodash_assignment.html
 class_4/lodash_underscore.html
 class_5/algo_ds.html
-class_5/function_decorator.html
 class_5/oldest_living_parent.html
 class_6/html_css_jq.html
 class_6/tabs.html

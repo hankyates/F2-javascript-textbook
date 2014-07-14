@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Backbone and Angular | Codefellows Javascript Foundations Night Course</title>
+        <title>(Bonus Assignment) Function Decorator | Codefellows Javascript Foundations Night Course</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.5.2">
@@ -19,10 +19,10 @@
     <meta name="author" content="hankyates">
     
     
-    <link rel="next" href="../class_8/backbone_angular.html" />
+    <link rel="next" href="../class_4/lodash_underscore.html" />
     
     
-    <link rel="prev" href="../class_7/ajax_fetch.html" />
+    <link rel="prev" href="../class_3/string_delimiter.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="hankyates/F2-javascript-textbook" data-level="9" data-basepath=".." data-revision="1405312381366">
+    <div class="book" data-github="hankyates/F2-javascript-textbook" data-level="4.2" data-basepath=".." data-revision="1405312381366">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -118,7 +118,7 @@
         
         
         <li>
-            <a href="https://github.com/hankyates/F2-javascript-textbook/edit/master/class_8/bb_ng.md" target="blank" class="contribute-link">Edit and Contribute</a>
+            <a href="https://github.com/hankyates/F2-javascript-textbook/edit/master/class_3/function_decorator.md" target="blank" class="contribute-link">Edit and Contribute</a>
         </li>
         
 
@@ -375,7 +375,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 90%;min-width: 85%;"></div>
+        <div class="inner" style="width: 45%;min-width: 40%;"></div>
     </div>
     <div class="chapters">
     
@@ -399,23 +399,23 @@
     
         <a href="../class_3/function_decorator.html" title="(Bonus Assignment) Function Decorator" class="chapter done " data-progress="4.2" style="left: 45%;"></a>
     
-        <a href="../class_4/lodash_underscore.html" title="Lodash and Underscore" class="chapter done new-chapter" data-progress="5" style="left: 50%;"></a>
+        <a href="../class_4/lodash_underscore.html" title="Lodash and Underscore" class="chapter  new-chapter" data-progress="5" style="left: 50%;"></a>
     
-        <a href="../class_4/lodash_assignment.html" title="(Assignment) String Delimiter function" class="chapter done " data-progress="5.1" style="left: 55%;"></a>
+        <a href="../class_4/lodash_assignment.html" title="(Assignment) String Delimiter function" class="chapter  " data-progress="5.1" style="left: 55%;"></a>
     
-        <a href="../class_5/algo_ds.html" title="Algorithms and Data Structures" class="chapter done new-chapter" data-progress="6" style="left: 60%;"></a>
+        <a href="../class_5/algo_ds.html" title="Algorithms and Data Structures" class="chapter  new-chapter" data-progress="6" style="left: 60%;"></a>
     
-        <a href="../class_5/oldest_living_parent.html" title="(Assignment) Oldest Living Parent" class="chapter done " data-progress="6.1" style="left: 65%;"></a>
+        <a href="../class_5/oldest_living_parent.html" title="(Assignment) Oldest Living Parent" class="chapter  " data-progress="6.1" style="left: 65%;"></a>
     
-        <a href="../class_6/html_css_jq.html" title="HTML CSS jQuery" class="chapter done new-chapter" data-progress="7" style="left: 70%;"></a>
+        <a href="../class_6/html_css_jq.html" title="HTML CSS jQuery" class="chapter  new-chapter" data-progress="7" style="left: 70%;"></a>
     
-        <a href="../class_6/tabs.html" title="(Assignment) Tabs" class="chapter done " data-progress="7.1" style="left: 75%;"></a>
+        <a href="../class_6/tabs.html" title="(Assignment) Tabs" class="chapter  " data-progress="7.1" style="left: 75%;"></a>
     
-        <a href="../class_7/async_ajax.html" title="Async and Ajax" class="chapter done new-chapter" data-progress="8" style="left: 80%;"></a>
+        <a href="../class_7/async_ajax.html" title="Async and Ajax" class="chapter  new-chapter" data-progress="8" style="left: 80%;"></a>
     
-        <a href="../class_7/ajax_fetch.html" title="(Assignment) Ajax fetch content for tabs" class="chapter done " data-progress="8.1" style="left: 85%;"></a>
+        <a href="../class_7/ajax_fetch.html" title="(Assignment) Ajax fetch content for tabs" class="chapter  " data-progress="8.1" style="left: 85%;"></a>
     
-        <a href="../class_8/bb_ng.html" title="Backbone and Angular" class="chapter done new-chapter" data-progress="9" style="left: 90%;"></a>
+        <a href="../class_8/bb_ng.html" title="Backbone and Angular" class="chapter  new-chapter" data-progress="9" style="left: 90%;"></a>
     
         <a href="../class_8/backbone_angular.html" title="(Assignment) Replace jQuery soup with Backbone/Angular" class="chapter  " data-progress="9.1" style="left: 95%;"></a>
     
@@ -426,19 +426,28 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_19">
+                    <section class="normal" id="section-gitbook_2">
                     
-                        <h1 id="backbone-and-angular">Backbone and Angular</h1>
-<ul>
-<li><a href="http://blog.codinghorror.com/understanding-model-view-controller/" target="_blank">MVC Design Pattern</a></li>
-<li><a href="http://cirw.in/blog/time-to-move-on" target="_blank">MOVE Design Pattern</a></li>
-</ul>
-<h2 id="tutorials">Tutorials</h2>
-<ul>
-<li><a href="https://egghead.io/" target="_blank">Angular Videos</a></li>
-<li><a href="http://adrianmejia.com/blog/2012/09/11/backbone-dot-js-for-absolute-beginners-getting-started" target="_blank">Backbone Tutorial</a></li>
-</ul>
+                        <pre><code>// Implement a decorator function that takes 
+// a function as an argument and will track
+// how many times the passed function was called.
 
+function Add(x, y) {
+  return x + y;
+}
+
+var Add = countDecorator(Add);
+
+Add(1, 1);
+// -&gt; 2 Dont pay attention to this number. The important part is we called the `Add` function once.
+Add.callCount();
+// -&gt; 1
+
+Add(2, 2);
+// -&gt; 4 Dont pay attention to this number either. The important part is we called the `Add` function again.
+Add.callCount();
+// -&gt; 2
+</code></pre>
                     
                     </section>
                 
@@ -447,10 +456,10 @@
         </div>
 
         
-        <a href="../class_7/ajax_fetch.html" class="navigation navigation-prev " aria-label="Previous page: (Assignment) Ajax fetch content for tabs"><i class="fa fa-angle-left"></i></a>
+        <a href="../class_3/string_delimiter.html" class="navigation navigation-prev " aria-label="Previous page: (Assignment) String Delimiter function"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../class_8/backbone_angular.html" class="navigation navigation-next " aria-label="Next page: (Assignment) Replace jQuery soup with Backbone/Angular"><i class="fa fa-angle-right"></i></a>
+        <a href="../class_4/lodash_underscore.html" class="navigation navigation-next " aria-label="Next page: Lodash and Underscore"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
