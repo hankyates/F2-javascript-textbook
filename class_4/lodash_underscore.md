@@ -11,4 +11,4 @@
 - [compose](http://lodash.com/docs#compose)
 
 ### Required Reading
-- [http://joelhooks.com/blog/2014/02/06/stop-writing-for-loops-start-using-underscorejs/](Stop writing for loops. Start using underscore.)
+- [Stop writing for loops. Start using underscore.](http://joelhooks.com/blog/2014/02/06/stop-writing-for-loops-start-using-underscorejs/)
