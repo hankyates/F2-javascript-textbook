@@ -5,8 +5,8 @@
 - [Big O](http://bigocheatsheet.com/)
 - Stack
 - Queue
-- Selection Sort
-- Quick Sort
+- Single and Double Linked Lists
+- Selection Sort vs Quick Sort
 - [Binary Search](https://github.com/mgechev/javascript-algorithms/blob/master/src/searching/binarysearch/binarysearch.js)
 - [Binary Search Tree](https://github.com/mgechev/javascript-algorithms/blob/master/src/data-structures/binary-search-tree.js)
 
