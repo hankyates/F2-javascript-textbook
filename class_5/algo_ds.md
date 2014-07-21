@@ -2,6 +2,7 @@
 
 ### Topics Covered
 
+- [Big O](http://bigocheatsheet.com/)
 - Stack
 - Queue
 - Selection Sort
@@ -11,3 +12,6 @@
 
 ### Reference
 - [Git repo with a javascript implementation of common algorithms](https://github.com/mgechev/javascript-algorithms)
+- [Sorting Algorithm Gifs](http://www.sorting-algorithms.com/)
+- [Big O Cheat Sheet](http://bigocheatsheet.com/)
+- [MIT Open Courseware on the Analysis of an Algorithm](https://www.youtube.com/playlist?list=PLB_QFf1fzn9OVZHWCwf6NkXpkI55LXsRk)
