@@ -10,7 +10,7 @@
   * [(Assignment) String Delimiter function](class_3/string_delimiter.md)
   * [(Bonus Assignment) Function Decorator](class_3/function_decorator.md)
 * [Lodash and Underscore](class_4/lodash_underscore.md)
-  * [(Assignment) String Delimiter function](class_4/lodash_assignment.md)
+  * [(Assignment) Lodash Assignment](class_4/lodash_assignment.md)
 * [Algorithms and Data Structures](class_5/algo_ds.md)
   * [(Assignment) Oldest Living Parent](class_5/oldest_living_parent.md)
 * [HTML CSS jQuery](class_6/html_css_jq.md)
