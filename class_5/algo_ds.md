@@ -15,3 +15,5 @@
 - [Sorting Algorithm Gifs](http://www.sorting-algorithms.com/)
 - [Big O Cheat Sheet](http://bigocheatsheet.com/)
 - [MIT Open Courseware on the Analysis of an Algorithm](https://www.youtube.com/playlist?list=PLB_QFf1fzn9OVZHWCwf6NkXpkI55LXsRk)
+- [Career Cup](http://www.careercup.com/)
+- [Project Euler](https://projecteuler.net/)
