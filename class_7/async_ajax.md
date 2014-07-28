@@ -1,11 +1,12 @@
 #Async and Ajax
-
-
-
-
+- [$.ajax](http://api.jquery.com/jquery.ajax/)
+- [$.getJSON](http://api.jquery.com/jquery.getjson/)
+- [node fs.readFile](http://nodejs.org/api/fs.html#fs_fs_readfile_filename_options_callback)
 
 ### Required Reading
-- [Rockbot Article](http://rckbt.me/2014/05/understanding-async/)
+- [Rockbot Async Article](http://rckbt.me/2014/05/understanding-async/)
+- [MDN AJAX Article](https://developer.mozilla.org/en-US/docs/AJAX)
+- [Promises](https://www.promisejs.org/)
 
 ### Class Code Snippets
 
