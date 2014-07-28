@@ -11,6 +11,7 @@
 - [Binary Search Tree](https://github.com/mgechev/javascript-algorithms/blob/master/src/data-structures/binary-search-tree.js)
 
 ### Reference
+- [Computational complexity theory](http://en.wikipedia.org/wiki/Computational_complexity_theory)
 - [Git repo with a javascript implementation of common algorithms](https://github.com/mgechev/javascript-algorithms)
 - [Sorting Algorithm Gifs](http://www.sorting-algorithms.com/)
 - [Big O Cheat Sheet](http://bigocheatsheet.com/)
