@@ -1,28 +1,28 @@
 CACHE MANIFEST
-# Revision 1405993138507
+# Revision 1406588196081
 
 CACHE:
 class_3/flow_control.html
+class_3/string_delimiter.html
 class_3/function_decorator.html
 index.html
+class_1/git.html
 class_1/primitive_types.html
 class_1/xor.html
 class_2/functions_objects.html
 class_2/person.html
-class_4/lodash_assignment.html
 class_4/lodash_underscore.html
-class_3/string_delimiter.html
 class_5/algo_ds.html
+class_5/oldest_living_parent.html
+class_6/html_css_jq.html
 class_6/tabs.html
 class_7/ajax_fetch.html
 class_7/async_ajax.html
+class_4/lodash_assignment.html
 class_8/backbone_angular.html
 class_8/bb_ng.html
 pre_course_work/pre_course_work.html
 supplemental_reading.html
-class_1/git.html
-class_5/oldest_living_parent.html
-class_6/html_css_jq.html
 gitbook/app.js
 gitbook/fonts/fontawesome/FontAwesome.otf
 gitbook/fonts/fontawesome/fontawesome-webfont.eot
