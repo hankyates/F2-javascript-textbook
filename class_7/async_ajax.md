@@ -8,6 +8,13 @@
 - [MDN AJAX Article](https://developer.mozilla.org/en-US/docs/AJAX)
 - [Promises](https://www.promisejs.org/)
 
+### Resources
+- [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+- [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
+- [REST](http://en.wikipedia.org/wiki/Representational_state_transfer)
+- [API glossary ](http://apiglossary.com/)
+- [Public APIs](http://www.publicapis.com/)
+
 ### Class Code Snippets
 
 #### content.json
