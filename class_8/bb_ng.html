@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="hankyates/F2-javascript-textbook" data-level="9" data-basepath=".." data-revision="1406588525335">
+    <div class="book" data-github="hankyates/F2-javascript-textbook" data-level="9" data-basepath=".." data-revision="1406754690762">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -426,7 +426,7 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_19">
+                    <section class="normal" id="section-gitbook_18">
                     
                         <h1 id="backbone-and-angular">Backbone and Angular</h1>
 <ul>
@@ -438,6 +438,168 @@
 <li><a href="https://egghead.io/" target="_blank">Angular Videos</a></li>
 <li><a href="http://adrianmejia.com/blog/2012/09/11/backbone-dot-js-for-absolute-beginners-getting-started" target="_blank">Backbone Tutorial</a></li>
 </ul>
+<h2 id="code-snippets">Code Snippets</h2>
+<h3 id="angular">Angular</h3>
+<p>ng.html</p>
+<pre><code class="lang-html"><span class="hljs-doctype">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span> <span class="hljs-attribute">ng-app</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.7/angular.min.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"ngTabs.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"ngTabs.css"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Tabs<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">ng-controller</span>=<span class="hljs-value">"NgTabsCtrl"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">ng-show</span>=<span class="hljs-value">"tabs.length === 0"</span>&gt;</span>
+        Loading...
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">ng-show</span>=<span class="hljs-value">"tabs.length &gt; 0"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">ng-repeat</span>=<span class="hljs-value">"tab in tabs"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">ng-class</span>=<span class="hljs-value">"{active: tab.name === activeTab.name}"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tab-link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">ng-click</span>=<span class="hljs-value">"showTab(tab)"</span>&gt;</span>{{tab.name}}<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hidden"</span>&gt;</span>{{tab.content}}<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active-tab-content"</span>&gt;</span>
+          {{activeTab.content}}
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<p>ng.js</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">NgTabsCtrl</span><span class="hljs-params">($scope, $http)</span> {</span>
+
+  $scope.tabs = [];
+
+  $http({method: <span class="hljs-string">'GET'</span>, url: <span class="hljs-string">'http://rs.hankyates.com:3000/content'</span>})
+    .success(onTabsFetched);
+
+  $scope.showTab = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(tab)</span>{</span>
+    $scope.activeTab = tab;
+  };
+
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onTabsFetched</span><span class="hljs-params">(tabs)</span>{</span>
+    $scope.tabs = tabs;
+    $scope.activeTab = $scope.tabs[<span class="hljs-number">0</span>];
+  }
+
+};
+</code></pre>
+<h3 id="backbone">Backbone</h3>
+<pre><code class="lang-html"><span class="hljs-doctype">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"no-js"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">"utf-8"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">http-equiv</span>=<span class="hljs-value">"X-UA-Compatible"</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"IE=edge"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Ajax Tabs Using Backbone<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"viewport"</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"width=device-width, initial-scale=1"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"app.css"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"tabs-app"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"hide-on-load"</span>&gt;</span>Loading...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"show-on-load"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tabs"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active-tab-content"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"app.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/template"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"tab-template"</span>&gt;</span><span class="javascript">
+            &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"tab"</span>&gt;
+                <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tab-link"</span>&gt;</span><span class="vbscript">&lt;%= name %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tab-content hidden"</span>&gt;</span><span class="vbscript">&lt;%= content %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        </span></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-javascript">$(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+
+    <span class="hljs-keyword">var</span> TabModel = Backbone.Model.extend({
+        defaults: {
+            name: <span class="hljs-string">'Unnamed Tab'</span>,
+            content: <span class="hljs-string">'Tab content not specified.'</span>
+        }
+    });
+
+    <span class="hljs-keyword">var</span> TabsCollection = Backbone.Collection.extend({
+        model: TabModel,
+        url: <span class="hljs-string">'http://rs.hankyates.com:3000/content'</span>
+    });
+
+    <span class="hljs-keyword">var</span> TabView = Backbone.View.extend({
+
+        template: _.template($(<span class="hljs-string">'#tab-template'</span>).html()),
+
+        initialize: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+            <span class="hljs-keyword">this</span>.render();
+        },
+
+        render: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+            <span class="hljs-keyword">this</span>.$el.html(<span class="hljs-keyword">this</span>.template(<span class="hljs-keyword">this</span>.model.attributes));
+               <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+        }
+    });
+
+    <span class="hljs-keyword">var</span> AppView = Backbone.View.extend({
+
+        el: <span class="hljs-string">'#tabs-app'</span>,
+
+        events: {
+            <span class="hljs-string">'click .tab-link'</span>: <span class="hljs-string">'tabClickHandler'</span>
+        },
+
+        initialize: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+            <span class="hljs-keyword">var</span> self = <span class="hljs-keyword">this</span>;
+            <span class="hljs-keyword">this</span>.$tabsList = <span class="hljs-keyword">this</span>.$(<span class="hljs-string">'.tabs'</span>);
+            <span class="hljs-keyword">this</span>.$activeTabContent = <span class="hljs-keyword">this</span>.$(<span class="hljs-string">'.active-tab-content'</span>);
+            <span class="hljs-keyword">this</span>.tabs = <span class="hljs-keyword">new</span> TabsCollection;
+            <span class="hljs-keyword">this</span>.listenTo(<span class="hljs-keyword">this</span>.tabs, <span class="hljs-string">'add'</span>, <span class="hljs-keyword">this</span>.addTab);
+            <span class="hljs-keyword">this</span>.tabs.fetch({ success: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+                self.render();
+            }});
+        },
+
+        render: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>
+            <span class="hljs-keyword">var</span> $firstTab = $(<span class="hljs-string">'.tab'</span>).first();
+            <span class="hljs-keyword">this</span>.activateTab($firstTab);
+            <span class="hljs-keyword">this</span>.$el.addClass(<span class="hljs-string">'loaded'</span>);
+        },
+
+        addTab: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(tab)</span>{</span>
+            <span class="hljs-keyword">var</span> tabView = <span class="hljs-keyword">new</span> TabView({ model: tab });
+            <span class="hljs-keyword">this</span>.$tabsList.append(tabView.el);
+        },
+
+        tabClickHandler: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span>{</span>
+            e.preventDefault();
+            <span class="hljs-keyword">this</span>.activateTab($(e.target).closest(<span class="hljs-string">'.tab'</span>));
+        },
+
+        activateTab: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">($tab)</span>{</span>
+            <span class="hljs-keyword">var</span> tabContent = $tab.find(<span class="hljs-string">'.tab-content'</span>).html(),
+                $allTabs = <span class="hljs-keyword">this</span>.$el.find(<span class="hljs-string">'.tab'</span>);
+
+            <span class="hljs-keyword">this</span>.$activeTabContent.html(tabContent);
+
+            $allTabs.removeClass(<span class="hljs-string">'active'</span>);
+
+            $tab.addClass(<span class="hljs-string">'active'</span>);
+        }
+
+
+    });
+
+    <span class="hljs-keyword">new</span> AppView();
+
+});
+</code></pre>
 
                     
                     </section>
